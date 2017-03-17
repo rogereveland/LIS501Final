@@ -1,3 +1,6 @@
+body {
+	padding-top: 70px;
+}
 #use_and_users {
 	background-image: url('/images/group.jpg');
 	background-attachment: fixed;
@@ -49,6 +52,11 @@
 }
 
 .jumbotron p {
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,0.75);
 	padding: 5px;
+}
+
+.section-heading {
+	font-size:22px;
+	font-weight:bold;
 }
