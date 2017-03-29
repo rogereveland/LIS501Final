@@ -8,10 +8,9 @@
  * Controller of the finalApp
  */
 angular.module('finalApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+	.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
+		$scope.scrollTo = function(id) {
+			$location.hash(id);
+			$anchorScroll();
+		};
+	});
